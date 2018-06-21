@@ -1,0 +1,27 @@
+{
+  "name": "my-child",
+  "version": "1.0.0",
+  "description": "A ready-to-develop child theme for WordPress",
+  "keywords": [],
+  "author": "Seebz",
+  "license": "WTFPL",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "build": "grunt",
+    "css": "grunt css",
+    "watch": "grunt watch"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-sass": "^2.1.0",
+    "grunt-stylelint": "^0.10.0",
+    "node-bourbon": "^4.2.8",
+    "stylelint": "^9.3.0",
+    "susy": "^3.0.5"
+  }
+}

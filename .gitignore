@@ -1,0 +1,15 @@
+
+# Sass
+.sass-cache
+*bourbon*
+
+# Node
+node_modules
+package-lock.json
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+Thumbs.db
