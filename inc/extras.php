@@ -14,6 +14,6 @@
  * @return array
  */
 function mychild_body_classes( $classes ) {
-    return $classes;
+	return $classes;
 }
 add_filter( 'body_class', 'mychild_body_classes' );

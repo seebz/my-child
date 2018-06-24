@@ -23,16 +23,16 @@ $mychild_template = $theme['Template'];
  * as indicating support for post thumbnails.
  */
 function mychild_setup() {
-    /**
-     * Suppression des metas `generator`
-     */
-    remove_action( 'wp_head', 'wp_generator' );
+	/**
+	 * Suppression des metas `generator`
+	 */
+	remove_action( 'wp_head', 'wp_generator' );
 
-    /**
-     * Désactivation du support des Emoji
-     */
-    remove_action( 'wp_head',         'print_emoji_detection_script', 7 );
-    remove_action( 'wp_print_styles', 'print_emoji_styles' );
+	/**
+	 * Désactivation du support des Emoji
+	 */
+	remove_action( 'wp_head',         'print_emoji_detection_script', 7 );
+	remove_action( 'wp_print_styles', 'print_emoji_styles' );
 }
 add_action( 'after_setup_theme', 'mychild_setup' );
 
@@ -41,16 +41,18 @@ add_action( 'after_setup_theme', 'mychild_setup' );
  * Enqueue scripts and styles.
  */
 function mychild_scripts() {
-    global $mychild_version, $mychild_template;
+	global $mychild_version, $mychild_template;
 
-    // Styles
-    wp_enqueue_style( $mychild_template . '-style', get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'mychild-style', get_stylesheet_uri(), '', $mychild_version );
+	// Styles
+	wp_enqueue_style( $mychild_template . '-style', get_template_directory_uri() . '/style.css' );
 
-    // Scripts
-    $suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+	wp_enqueue_style( 'mychild-style', get_stylesheet_uri(), '', $mychild_version );
+	wp_style_add_data( 'mychild-style', 'rtl', 'replace' );
 
-    wp_enqueue_script( 'mychild-script', get_stylesheet_directory_uri() . '/assets/js/script' . $suffix . '.js', array( 'jquery' ), $mychild_version, true );
+	// Scripts
+	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+
+	wp_enqueue_script( 'mychild-script', get_stylesheet_directory_uri() . '/assets/js/script' . $suffix . '.js', array( 'jquery' ), $mychild_version, true );
 }
 add_action( 'wp_enqueue_scripts', 'mychild_scripts' );
 
