@@ -63,9 +63,9 @@ add_action( 'wp_enqueue_scripts', 'mychild_scripts' );
 // require get_template_directory() . '/inc/template-tags.php';
 
 /**
- * Custom functions that act independently of the theme templates.
+ * Additional features to allow styling of the templates.
  */
-// require get_template_directory() . '/inc/extras.php';
+// require get_template_directory() . '/inc/template-functions.php';
 
 /**
  * Customizer additions.
