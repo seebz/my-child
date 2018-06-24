@@ -45,9 +45,7 @@ function mychild_scripts() {
 
 	// Styles
 	wp_enqueue_style( $mychild_template . '-style', get_template_directory_uri() . '/style.css' );
-
 	wp_enqueue_style( 'mychild-style', get_stylesheet_uri(), '', $mychild_version );
-	wp_style_add_data( 'mychild-style', 'rtl', 'replace' );
 
 	// Scripts
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
