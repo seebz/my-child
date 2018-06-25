@@ -1,6 +1,6 @@
 ;(function($) {
-  'use strict';
+	'use strict';
 
-  $(document.body).switchClass('no-js', 'js');
+	$(document.body).switchClass('no-js', 'js');
 
 })(jQuery);

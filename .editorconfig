@@ -1,0 +1,38 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+root = true
+
+[**]
+indent_style = tab
+tab_width = 4
+end_of_line = lf
+charset = utf-8
+
+# https://make.wordpress.org/core/handbook/best-practices/coding-standards/css/#structure
+[**.{css,sass,scss}]
+indent_style = tab
+indent_size = 4
+
+# https://make.wordpress.org/core/handbook/best-practices/coding-standards/html/#indentation
+[**.{html,xml}]
+indent_style = tab
+indent_size = 4
+
+# https://make.wordpress.org/core/handbook/best-practices/coding-standards/javascript/#spacing
+[**.js]
+indent_style = tab
+indent_size = 4
+
+# https://make.wordpress.org/core/handbook/best-practices/coding-standards/javascript/#spacing
+[**.json]
+indent_style = tab
+indent_size = 4
+charset = latin1
+
+[**.{md,markdown}]
+trim_trailing_whitespace = false
+
+# https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/#indentation
+[**.php]
+indent_style = tab
+indent_size = 4
