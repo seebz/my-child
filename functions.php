@@ -58,19 +58,19 @@ add_action( 'wp_enqueue_scripts', 'mychild_scripts' );
 /**
  * Custom template tags for this theme.
  */
-// require get_template_directory() . '/inc/template-tags.php';
+// require get_stylesheet_directory() . '/inc/template-tags.php';
 
 /**
  * Additional features to allow styling of the templates.
  */
-// require get_template_directory() . '/inc/template-functions.php';
+// require get_stylesheet_directory() . '/inc/template-functions.php';
 
 /**
  * Customizer additions.
  */
-// require get_template_directory() . '/inc/customizer.php';
+// require get_stylesheet_directory() . '/inc/customizer.php';
 
 /**
  * Load Jetpack compatibility file.
  */
-// require get_template_directory() . '/inc/jetpack.php';
+// require get_stylesheet_directory() . '/inc/jetpack.php';
