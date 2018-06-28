@@ -8,6 +8,13 @@
  */
 
 /**
+ * Jetpack Development Mode
+ *
+ * @link https://jetpack.com/support/development-mode/
+ */
+// add_filter( 'jetpack_development_mode', '__return_true' );
+
+/**
  * Jetpack setup function.
  *
  * See: https://jetpack.me/support/
