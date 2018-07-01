@@ -74,3 +74,10 @@ add_action( 'wp_enqueue_scripts', 'mychild_scripts' );
  * Load Jetpack compatibility file.
  */
 // require get_stylesheet_directory() . '/inc/jetpack.php';
+
+/**
+ * Admin
+ */
+// if ( is_admin() ) {
+// 	require get_stylesheet_directory() . '/inc/admin/functions.php';
+// }
