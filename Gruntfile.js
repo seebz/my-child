@@ -153,6 +153,7 @@ module.exports = function(grunt) {
 					'assets/css/admin/*.scss',
 					'assets/css/customizer/*.scss',
 					'assets/css/jetpack/*.scss',
+					'assets/css/sass/*.scss',
 					'assets/css/sass/utils/*.scss',
 					'assets/css/sass/vendors/*.scss'
 				],
