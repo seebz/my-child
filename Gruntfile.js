@@ -109,6 +109,7 @@ module.exports = function(grunt) {
 				files: [{
 					'style.css': 'style.scss',
 					'assets/css/admin/admin.css': 'assets/css/admin/admin.scss',
+					'assets/css/admin/editor-style.css': 'assets/css/admin/editor-style.scss',
 					'assets/css/customizer/customizer.css': 'assets/css/customizer/customizer.scss',
 					'assets/css/jetpack/jetpack.css': 'assets/css/jetpack/jetpack.scss'
 				}]
